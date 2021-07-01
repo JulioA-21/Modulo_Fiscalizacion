@@ -1,0 +1,90 @@
+<odoo>
+
+  <!-- Sequence-->
+  <data >
+    <record id="seq_mi_modulo" model="ir.sequence">
+      <field name="name">Inspection Number</field>
+      <field name="code">atm.inspection</field>
+      <field name="prefix"></field>
+      <field name="padding">5</field>
+      <field name="company_id" eval="False"/>
+    </record>
+  </data>
+
+  <record id="view_tree_inspection" model="ir.ui.view">
+    <field name="name">view.tree.inspection</field>
+    <field name="model">atm.inspection</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="expedient_id"/>
+        <field name="agent_id"/>
+        <field name="client_id"/>
+        <field name="debt_total"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_form_inspection" model="ir.ui.view">
+    <field name="name">view.form.inspectiom</field>
+    <field name="model">atm.inspection</field>
+    <field name="arch" type="xml">
+      <form>
+        <xpath expr="//header" position="inside">
+          <header>
+            <button string="Mark as Charge Actuation" name="action_btn_charge_actuation" type="object" attrs="{'invisible':[('state','not in',('draft'))]}" class="oe_highlight"/>
+            <button string="Mark as Documentation Solicited" name="action_btn_documentation_solicited" type="object" attrs="{'invisible':[('state','not in',('charge_actuation'))]}" class="oe_highlight"/>
+            <button string="Mark as Documentation Solicited Overdue" name="action_btn_documentation_solicited_overdue" type="object" attrs="{'invisible':[('state','not in',('documentation_solicited'))]}" class="oe_highlight"/>
+            <button string="Mark as Presunte Debt" name="action_btn_presunte_debt" type="object" attrs="{'invisible':[('state','not in',('charge_actuation','documentation_solicited_overdue','documentation_solicited'))]}" class="oe_highlight"/>
+            <button string="Mark as View" name="action_btn_view" type="object" attrs="{'invisible':[('state','not in',('presunte_debt','intimation'))]}" class="oe_highlight"/>
+            <button string="Mark as Intimation" name="action_btn_intimation" type="object" attrs="{'invisible':[('state','not in',('presunte_debt','draft'))]}" class="oe_highlight"/>
+            <button string="Mark as Determinative" name="action_btn_determinative" type="object" attrs="{'invisible':[('state','not in',('legal','view'))]}" class="oe_highlight"/>
+            <button string="Mark as Played" name="action_btn_played" type="object" attrs="{'invisible':[('state','not in',('determinative'))]}" class="oe_highlight"/>
+            <button string="Mark as Legal" name="action_btn_legal" type="object" attrs="{'invisible':[('state','not in',('determinative'))]}" class="oe_highlight"/>
+            <field name="state" widget="statusbar" statusbar_visible="Draft,Charge Actuation,Documentation Solicited,Documentation Solicited Overdue,Presunte Debt,View,Intimation,Determinative,Legal,Played"/>
+          </header>
+        </xpath>
+        <sheet>
+          <div class="oe_title">
+            <label for="name" class="oe_edit_only"/>
+            <h1>
+              <field name="name" placeholder="Name"/>
+            </h1>
+          </div>
+          <group>
+            <group>
+              <field name="cedule" string="Cedule"/>
+              <field name="expedient_id" string="Expedient" domain="[('type','=','fiscalizaion_inspection')]"/>
+              <field name="agent_id" string="Agent"/>
+              <field name="client_id" string="Client" domain="[('taxpayer','=','1')]"/>
+            </group>
+            <group>
+              <field name="date_start" string="Date Start"/>
+              <field name="date_end_charge" string="End Charge"/>
+              <field name="date_end_view" string="End View"/>
+              <field name="date_end_intimation" string="End Intimation"/>
+              <field name="date_end_determinative" string="End Determinative"/>
+            </group>
+            <group>
+              <field name="debt_iibb" widget="monetary" string="IIBB Debt"/>
+              <field name="debt_agent" widget="monetary" string="Agent Debt"/>
+              <field name="debt_ipa" widget="monetary" string="IPA Debt"/>
+              <field name="debt_sell" widget="monetary" string="Sell Debt"/>
+              <field name="amount_interest" widget="monetary" string="Amount Interest"/>
+              <field name="amount_fine" widget="monetary" string="Amount Fine"/>
+              <field name="debt_total" widget="monetary" string="Debt Total"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_view_inspection" model="ir.actions.act_window">
+    <field name="name">Inspection</field>
+    <field name="res_model">atm.inspection</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="action_menu_view_inspection" parent="" action="action_view_inspection"/>
+</odoo>

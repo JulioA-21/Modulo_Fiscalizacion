@@ -1,0 +1,44 @@
+<odoo>
+    <record id="view_tree_expedient" model="ir.ui.view">
+        <field name="name">view.tree.expedient</field>
+        <field name="model">atm.expedient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="fiscalyear"/>
+                <field name="type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_tasks" model="ir.ui.view">
+        <field name="name">view.form.expedient</field>
+        <field name="model">atm.expedient</field>
+        <field name="arch" type="xml">
+            <form>
+                <xpath expr="//header" position="inside">
+                </xpath>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" string="Expedient Name"/>
+                            <field name="description" string="Description"/>
+                        </group>
+                        <group>
+                            <field name="fiscalyear" string="FIscal Year"/>
+                            <field name="type" string="Type"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_expedient" model="ir.actions.act_window">
+        <field name="name">Expedient</field>
+        <field name="res_model">atm.expedient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="action_menu_view_expedient" parent="atm_inspection.action_menu_view_inspection" action="action_view_expedient" name="Expedient" sequence="1"/>
+</odoo>

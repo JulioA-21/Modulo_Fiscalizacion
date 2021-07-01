@@ -1,0 +1,364 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* atm_inspection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-01 14:50+0000\n"
+"PO-Revision-Date: 2021-07-01 14:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_expedient__type__administration
+msgid "Administration"
+msgstr "Administracion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__agent_id
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Agent"
+msgstr "Agente"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_agent
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Agent Debt"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__amount_fine
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Amount Fine"
+msgstr "Monto de la multa"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__amount_interest
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Amount Interest"
+msgstr "Monto de intereses"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Cedule"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__charge_actuation
+msgid "Charge Actuation"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__client_id
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Client"
+msgstr "Cliente"
+
+#. module: atm_inspection
+#: model:ir.model,name:atm_inspection.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__create_uid
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__create_date
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Date Start"
+msgstr "Fecha Inicio"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_total
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Debt Total"
+msgstr "Deuda Total"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__description
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_tasks
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__determinative
+msgid "Determinative"
+msgstr "Determinativo"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__display_name
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__documentation_solicited
+msgid "Documentation Solicited"
+msgstr "Documentacion Solicitada"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__documentation_solicited_overdue
+msgid "Documentation Solicited Overdue"
+msgstr "Documentacion Atrasada Solicitada"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "End Charge"
+msgstr "Fin Fecha de Activacion de Carga"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "End Determinative"
+msgstr "Fin Fecha Determinativa"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "End Intimation"
+msgstr "Fin Fecha Intimacion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_intimation
+msgid "End Intimation date"
+msgstr ""
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "End View"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_view
+msgid "End View date"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_charge
+msgid "End charge date"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_determinative
+msgid "End determinative date"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.actions.act_window,name:atm_inspection.action_view_expedient
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__expedient_id
+#: model:ir.ui.menu,name:atm_inspection.action_menu_view_expedient
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Expedient"
+msgstr "Expediente"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_tasks
+msgid "Expedient Name"
+msgstr "Nombre de Expediente"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__name
+msgid "Expedient Number"
+msgstr "Numero de Expediente"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_tasks
+msgid "FIscal Year"
+msgstr "Año Fiscal"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__fiscalyear
+msgid "Fiscal Year"
+msgstr "Año Fiscal"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_expedient__type__fiscalizaion_inspection
+msgid "Fiscalization_Inspection"
+msgstr "Fiscalizacion/Insipeccion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__id
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__id
+msgid "ID"
+msgstr "ID"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_iibb
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "IIBB Debt"
+msgstr "Deuda IIBB"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_ipa
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "IPA Debt"
+msgstr "Deuda IPA"
+
+#. module: atm_inspection
+#: model:ir.actions.act_window,name:atm_inspection.action_view_inspection
+#: model:ir.ui.menu,name:atm_inspection.action_menu_view_inspection
+msgid "Inspection"
+msgstr "Fiscalizacion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__name
+msgid "Inspection Number"
+msgstr "Numero Fiscalizacion"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__intimation
+msgid "Intimation"
+msgstr "Intimacion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient____last_update
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificacion"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__write_uid
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actualizacion hecha por"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__write_date
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__legal
+msgid "Legal"
+msgstr "Legal"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Charge Actuation"
+msgstr "Marcar como Activacion de Carga"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Determinative"
+msgstr "Marcar como Determinativa"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Documentation Solicited"
+msgstr "Marcar como DOcumentacion Solicitada"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Documentation Solicited Overdue"
+msgstr "Marcar como documentacion Atrasada solicitada"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Intimation"
+msgstr "Marcar como Intimacion"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Legal"
+msgstr "Marcar como Legal"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Played"
+msgstr ""
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as Presunte Debt"
+msgstr "Marcar como Deuda Presunta"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Mark as View"
+msgstr "Marcar como Visto"
+
+#. module: atm_inspection
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Name"
+msgstr "Nombre"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__played
+msgid "Played"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__presunte_debt
+msgid "Presunte Debt"
+msgstr "Deuda Presunta"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_property
+msgid "Property Debit"
+msgstr "Deuda Inmueble"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_sell
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
+msgid "Sell Debt"
+msgstr "Deuda Sello"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_start
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__state
+msgid "State"
+msgstr "Estado"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_res_partner__taxpayer
+#: model:ir.model.fields,field_description:atm_inspection.field_res_users__taxpayer
+msgid "Tax Payer"
+msgstr "Paga Impuestos"
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__type
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_tasks
+msgid "Type"
+msgstr "Tipo"
+
+#. module: atm_inspection
+#: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__view
+msgid "View"
+msgstr "Visto"
+
+#. module: atm_inspection
+#: model:ir.model,name:atm_inspection.model_atm_expedient
+msgid "atm.expedient"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model,name:atm_inspection.model_atm_inspection
+msgid "atm.inspection"
+msgstr ""
+
+#. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__cedule
+msgid "cedule"
+msgstr "Cedula"
