@@ -19,6 +19,14 @@
                 <xpath expr="//header" position="inside">
                 </xpath>
                 <sheet>
+                <!-- Title
+                    <div class="oe_title">
+                      <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="code" placeholder="Name">action = atm_expedient.get_name()</field>
+                        </h1>
+                    </div>
+                    -->
                     <group>
                         <group>
                             <field name="name" string="Expedient Name"/>
@@ -40,5 +48,5 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="action_menu_view_expedient" parent="atm_inspection.action_menu_view_inspection" action="action_view_expedient" name="Expedient" sequence="1"/>
+    <menuitem id="action_menu_view_expedient" parent="atm_inspection.menu_view_inspection" action="action_view_expedient" name="Expedient" sequence="3"/>
 </odoo>

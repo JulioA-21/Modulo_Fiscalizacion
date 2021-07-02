@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_inherit_view" model="ir.ui.view">
+        <field name="name">hr_employee.inherit.view</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+          <field name="name" invisible="1"/>
+        </field>
+    </record>
+    <record id="action_view_hr_employee" model="ir.actions.act_window">
+        <field name="name">Agent</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="action_menu_view_hr_employee" parent="atm_inspection.menu_view_inspection" action="action_view_hr_employee" sequence="4"/>
+</odoo>

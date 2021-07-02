@@ -6,10 +6,17 @@
       <field name="model">res.partner</field>
       <field name="inherit_id" ref="base.view_partner_form"/>
       <field name="arch" type="xml">
-          <field name="category_id" position="after">
+        <field name="category_id" position="after">
           <field name="taxpayer" />
         </field>
       </field>
     </record>
   </data>
+
+   <record id="action_view_res_partner" model="ir.actions.act_window">
+    <field name="name">Client</field>
+    <field name="res_model">res.partner</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="action_menu_view_res_partner" parent="atm_inspection.menu_view_inspection" action="action_view_res_partner" sequence="2"/>
 </odoo>

@@ -53,17 +53,17 @@
           </div>
           <group>
             <group>
-              <field name="cedule" string="Cedule"/>
+              <field name="cedule" string="Cedule" />
               <field name="expedient_id" string="Expedient" domain="[('type','=','fiscalizaion_inspection')]"/>
               <field name="agent_id" string="Agent"/>
               <field name="client_id" string="Client" domain="[('taxpayer','=','1')]"/>
             </group>
             <group>
               <field name="date_start" string="Date Start"/>
-              <field name="date_end_charge" string="End Charge"/>
+              <field name="date_end_charge" string="End Charge date"/>
               <field name="date_end_view" string="End View"/>
-              <field name="date_end_intimation" string="End Intimation"/>
-              <field name="date_end_determinative" string="End Determinative"/>
+              <field name="date_end_intimation" string="End Intimation date"/>
+              <field name="date_end_determinative" string="End Determinative date"/>
             </group>
             <group>
               <field name="debt_iibb" widget="monetary" string="IIBB Debt"/>
@@ -86,5 +86,8 @@
     <field name="view_mode">tree,form</field>
   </record>
 
-  <menuitem id="action_menu_view_inspection" parent="" action="action_view_inspection"/>
+  <menuitem id="menu_view_inspection" parent="" action=""/>
+  
+  <menuitem id="action_menu_view_inspection" parent="atm_inspection.menu_view_inspection" action="action_view_inspection" sequence="1"/>
+  
 </odoo>

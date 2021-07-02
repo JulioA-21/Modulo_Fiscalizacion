@@ -27,6 +27,7 @@
         'views/res_partner_inherit_view.xml',
         'views/inspection_views.xml',
         'views/expedient_views.xml',
+        'views/hr_employee_inherit_view.xml',
     ],
 
 }

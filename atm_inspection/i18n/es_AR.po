@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 14:50+0000\n"
-"PO-Revision-Date: 2021-07-01 14:50+0000\n"
+"POT-Creation-Date: 2021-07-02 14:46+0000\n"
+"PO-Revision-Date: 2021-07-02 14:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,9 @@ msgid "Administration"
 msgstr "Administracion"
 
 #. module: atm_inspection
+#: model:ir.actions.act_window,name:atm_inspection.action_view_hr_employee
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__agent_id
+#: model:ir.ui.menu,name:atm_inspection.action_menu_view_hr_employee
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Agent"
 msgstr "Agente"
@@ -30,7 +32,7 @@ msgstr "Agente"
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_agent
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Agent Debt"
-msgstr ""
+msgstr "Deuda Agente"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__amount_fine
@@ -47,15 +49,17 @@ msgstr "Monto de intereses"
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Cedule"
-msgstr ""
+msgstr "Cedula"
 
 #. module: atm_inspection
 #: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__charge_actuation
 msgid "Charge Actuation"
-msgstr ""
+msgstr "Activacion de Carga"
 
 #. module: atm_inspection
+#: model:ir.actions.act_window,name:atm_inspection.action_view_res_partner
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__client_id
+#: model:ir.ui.menu,name:atm_inspection.action_menu_view_res_partner
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Client"
 msgstr "Cliente"
@@ -121,44 +125,45 @@ msgid "Draft"
 msgstr "Borrador"
 
 #. module: atm_inspection
-#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
-msgid "End Charge"
-msgstr "Fin Fecha de Activacion de Carga"
+#: model:ir.model,name:atm_inspection.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
 
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
-msgid "End Determinative"
-msgstr "Fin Fecha Determinativa"
+msgid "End Charge date"
+msgstr "Fecha final de Carga"
 
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
-msgid "End Intimation"
-msgstr "Fin Fecha Intimacion"
+msgid "End Determinative date"
+msgstr "Fecha final Determinativa"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_intimation
+#: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "End Intimation date"
-msgstr ""
+msgstr "Fecha final Intimacion"
 
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "End View"
-msgstr ""
+msgstr "Fecha final de Vista"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_view
 msgid "End View date"
-msgstr ""
+msgstr "Fecha final de Vista"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_charge
 msgid "End charge date"
-msgstr ""
+msgstr "Fecha final de Carga"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__date_end_determinative
 msgid "End determinative date"
-msgstr ""
+msgstr "Fecha final Determinativa"
 
 #. module: atm_inspection
 #: model:ir.actions.act_window,name:atm_inspection.action_view_expedient
@@ -191,13 +196,13 @@ msgstr "Año Fiscal"
 #. module: atm_inspection
 #: model:ir.model.fields.selection,name:atm_inspection.selection__atm_expedient__type__fiscalizaion_inspection
 msgid "Fiscalization_Inspection"
-msgstr "Fiscalizacion/Insipeccion"
+msgstr "Fiscalizacion/Inspeccion"
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_expedient__id
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: atm_inspection
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__debt_iibb
@@ -248,7 +253,7 @@ msgstr ""
 #. module: atm_inspection
 #: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__legal
 msgid "Legal"
-msgstr "Legal"
+msgstr ""
 
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
@@ -283,7 +288,7 @@ msgstr "Marcar como Legal"
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Mark as Played"
-msgstr ""
+msgstr "Marcar como Pagado"
 
 #. module: atm_inspection
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
@@ -296,6 +301,7 @@ msgid "Mark as View"
 msgstr "Marcar como Visto"
 
 #. module: atm_inspection
+#: model:ir.model.fields,field_description:atm_inspection.field_hr_employee__name
 #: model_terms:ir.ui.view,arch_db:atm_inspection.view_form_inspection
 msgid "Name"
 msgstr "Nombre"
@@ -303,7 +309,7 @@ msgstr "Nombre"
 #. module: atm_inspection
 #: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__played
 msgid "Played"
-msgstr ""
+msgstr "Pagado"
 
 #. module: atm_inspection
 #: model:ir.model.fields.selection,name:atm_inspection.selection__atm_inspection__state__presunte_debt
@@ -362,3 +368,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:atm_inspection.field_atm_inspection__cedule
 msgid "cedule"
 msgstr "Cedula"
+
+#. module: atm_inspection
+#: model:ir.ui.menu,name:atm_inspection.menu_view_inspection
+msgid "menu_view_inspection"
+msgstr "Fiscalizacion"
