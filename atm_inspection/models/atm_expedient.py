@@ -9,5 +9,4 @@ class AtmExpedient(models.Model):
     type  = fields.Selection([('administration', 'Administration'),('fiscalizaion_inspection', 'Fiscalization_Inspection')],required=True)
 
     def get_name(self):
-        print("anduveishon")
         return self.name +"/"+self.fiscalyear
