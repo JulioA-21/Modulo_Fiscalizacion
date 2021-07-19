@@ -11,7 +11,7 @@
     </record>
   </data>
 
-  <record id="view_tree_inspection" model="ir.ui.view">
+  <record id="view_tree_user_inspection" model="ir.ui.view">
     <field name="name">view.tree.inspection</field>
     <field name="model">atm.inspection</field>
     <field name="arch" type="xml">
@@ -28,7 +28,7 @@
     </field>
   </record>
 
-  <record id="view_form_inspection" model="ir.ui.view">
+  <record id="view_form_user_inspection" model="ir.ui.view">
     <field name="name">view.form.inspectiom</field>
     <field name="model">atm.inspection</field>
     <field name="arch" type="xml">
@@ -107,14 +107,16 @@
     </field>
   </record>
 
-  <record id="action_view_inspection" model="ir.actions.act_window">
-    <field name="name">Inspection</field>
+  <record id="action_view_user_inspection" model="ir.actions.act_window">
+    <field name="name">My Inspection</field>
     <field name="res_model">atm.inspection</field>
     <field name="view_mode">tree,form</field>
+    <field name="domain">[('agent_id.user_id','=',uid)]</field>
+
+
   </record>
 
-  <menuitem id="menu_view_inspection" parent="" action=""/>
 
-  <menuitem id="action_menu_view_inspection" parent="atm_inspection.menu_view_inspection" action="action_view_inspection" groups="atm_inspection.group_admin" sequence="1"/>
+  <menuitem id="action_menu_view_user_inspection" parent="atm_inspection.menu_view_inspection" action="action_view_user_inspection" groups="atm_inspection.group_user" sequence="1"/>
 
 </odoo>

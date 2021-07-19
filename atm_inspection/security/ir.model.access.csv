@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_atm_inspection_atm_inspection,atm_inspection.atm_inspection,model_atm_inspection_atm_inspection,base.group_user,1,1,1,1
+access_atm_inspection,access.inspection,atm_inspection.model_atm_inspection,atm_inspection.group_admin,1,1,1,1
+access_atm_inspection_admin_exp,access.inspection.admin.exp,atm_inspection.model_atm_expedient,atm_inspection.group_admin,1,1,1,1
+access_atm_inspection_user_ins,access.inspection.user.ins,atm_inspection.model_atm_inspection,atm_inspection.group_user,1,1,1,0
+access_atm_inspection_user_exp,access.inspection.user.exp,atm_inspection.model_atm_expedient,atm_inspection.group_user,1,1,1,0

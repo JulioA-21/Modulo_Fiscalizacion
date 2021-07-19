@@ -5,8 +5,10 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="date_start" string="Date start Expedient"/>
                 <field name="fiscalyear"/>
-                <field name="type"/>
+                <field name="type" string="Type"/>
+                <field name="location" string="Location"/>
             </tree>
         </field>
     </record>
@@ -19,22 +21,16 @@
                 <xpath expr="//header" position="inside">
                 </xpath>
                 <sheet>
-                <!-- Title
-                    <div class="oe_title">
-                      <label for="name" class="oe_edit_only"/>
-                        <h1>
-                            <field name="code" placeholder="Name">action = atm_expedient.get_name()</field>
-                        </h1>
-                    </div>
-                    -->
                     <group>
                         <group>
                             <field name="name" string="Expedient Name"/>
+                            <field name="fiscalyear" string="FIscal Year"/>
                             <field name="description" string="Description"/>
                         </group>
                         <group>
-                            <field name="fiscalyear" string="FIscal Year"/>
+                            <field name="date_start" string="Date start Expedient"/>
                             <field name="type" string="Type"/>
+                            <field name="location" string="Location"/>
                         </group>
                     </group>
                 </sheet>

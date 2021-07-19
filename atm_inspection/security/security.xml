@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.module.category" id="cat_atm_inspection">
+        <field name="name">AMT_Inspection</field>
+        <field name="description">User access level for this module</field>
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="group_user" model="res.groups">
+        <field name="name">Users</field>
+        <field name="category_id" ref="cat_atm_inspection"/>
+    </record>
+
+    <record id="group_admin" model="res.groups">
+        <field name="name">ADMIN</field>
+        <field name="category_id" ref="cat_atm_inspection"/>
+    </record>
+
+ 
+</odoo>
+

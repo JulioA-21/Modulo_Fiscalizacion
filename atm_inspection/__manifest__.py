@@ -3,14 +3,13 @@
     'name': "ATM Inspection",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modulo correspondiente a sector Fiscalizacion ATM  """,
 
     'description': """
         Long description of module's purpose
     """,
 
-    'author': "Julio",
+    'author': "Julio Alves",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -28,6 +27,9 @@
         'views/inspection_views.xml',
         'views/expedient_views.xml',
         'views/hr_employee_inherit_view.xml',
+        'views/inspection_user_view.xml',
+        'security/security.xml',
+        'security/ir.model.access.csv',
     ],
 
 }
